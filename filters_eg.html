@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+		</script>
+	</head>
+	<body ng-app="myapp" ng-controller="myctrl">
+		<input type="text" placeholder="search color" ng-model="search"/>
+		
+		<ul>
+			<li ng-repeat="x in colors | orderBy:'name' | filter: search" >
+				{{x.name}}
+			</li>
+		</ul>
+		<script>
+			angular.module('myapp',[]).controller('myctrl',function($scope) {
+					$scope.colors=[{ name:'pink'},
+							{name:'yellow'},
+							{name:'blue'}];
+						});
+
+		</script>
+	</body>
+</html>

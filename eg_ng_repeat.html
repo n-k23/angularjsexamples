@@ -1,0 +1,12 @@
+ ng-repeat example
+<html ng-app="">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+		</script>
+	</head>
+	<body ng-init="schools=['sunshine','gouthami','vasista','sikhle']">
+		<ul>
+			<li ng-repeat="x in schools">{{x}}</li>
+		</ul>
+	</body>
+</html>

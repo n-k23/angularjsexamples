@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+		</script>
+	</head>
+	<body ng-app="myapp" ng-controller="myctrl">
+		<p>following is the example of $hhtp service<p>
+		<h1>{{mywelcome}}</h1>
+		<script>
+			var app=angular.module('myapp',[]);
+			app.controller('myctrl', function($scope, $http)
+						{
+						$http.get("kavya.html").then(function (response) {
+						$scope.mywelcome=response.data;
+							});
+						});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+#color {
+		float : right;
+		border-radius : 10px;
+		margin-right : 10px;
+		}
+.remove {
+		float : right;
+    	color:red;
+		cursor: pointer;
+        }
+.frm {
+	border: 5px;
+}

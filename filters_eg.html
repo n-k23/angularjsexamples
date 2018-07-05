@@ -1,11 +1,5 @@
-<html>
-	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
-		</script>
-	</head>
-	<body ng-app="myapp" ng-controller="myctrl" >
 
-		<div ng-include="'menu_bar.html'"></div>
+	<div ng-controller="myctrl1" >
 		
 		<input type="text" placeholder="search color" ng-model="search"/>
 		
@@ -14,14 +8,4 @@
 				{{x.name}}
 			</li>
 		</ul>
-
-		<script>
-			angular.module('myapp',[]).controller('myctrl',function($scope) {
-					$scope.colors=[{ name:'pink'},
-							{name:'yellow'},
-							{name:'blue'}];
-						});
-
-		</script>
-	</body>
-</html>
+	</div>
